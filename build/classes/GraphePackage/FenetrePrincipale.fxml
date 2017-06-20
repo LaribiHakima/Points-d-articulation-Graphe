@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="537.0" prefWidth="383.0" styleClass="background" stylesheets="@../JMetroDarkTheme.css" xmlns="http://javafx.com/javafx/8.0.40" xmlns:fx="http://javafx.com/fxml/1" fx:controller="GraphePackage.FenetrePrincipaleController">
+   <children>
+      <ImageView fitHeight="434.0" fitWidth="379.0" layoutX="4.0" layoutY="37.0" opacity="0.45" pickOnBounds="true">
+         <image>
+            <Image url="@../TPGO.png" />
+         </image>
+      </ImageView>
+      <Label alignment="CENTER" layoutX="13.0" layoutY="15.0" prefHeight="74.0" prefWidth="361.0" styleClass="header" text="TP TPGO N°02">
+         <font>
+            <Font name="Tahoma Bold" size="26.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="8.0" layoutY="98.0" prefHeight="44.0" prefWidth="372.0" style="-fx-font-size: 32; -fx-font-family: &quot;Segoe UI Light&quot;; -fx-text-fill: white; -fx-font-style: oblique;" styleClass="Sous-titre" text="Les points d'articulation">
+         <font>
+            <Font name="Tahoma Bold" size="26.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="4.0" layoutY="184.0" prefHeight="62.0" prefWidth="208.0" styleClass="Sous-titre" text="réalisé par :">
+         <font>
+            <Font name="Tahoma Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="50.0" layoutY="290.0" prefHeight="44.0" prefWidth="175.0" styleClass="Nom" text="* YOUNES Walid">
+         <font>
+            <Font name="Tahoma Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="50.0" layoutY="239.0" prefHeight="44.0" prefWidth="175.0" styleClass="Nom" text="* AZOUD Achwak">
+         <font>
+            <Font name="Tahoma Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="90.0" layoutY="471.0" prefHeight="55.0" prefWidth="208.0" styleClass="Sous-titre" text="2015/2016">
+         <font>
+            <Font name="Tahoma Bold" size="18.0" />
+         </font>
+      </Label>
+      <Button layoutX="151.0" layoutY="352.0" mnemonicParsing="false" onAction="#ClickEnter" styleClass="Mybutton" text="Enter" />
+      <Button layoutX="150.0" layoutY="406.0" mnemonicParsing="false" onAction="#ClickSortir" styleClass="default" text="Sortir" />
+   </children>
+</AnchorPane>

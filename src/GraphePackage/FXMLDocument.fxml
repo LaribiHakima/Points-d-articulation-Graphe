@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.shape.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="548.0" prefWidth="1095.0" styleClass="background" stylesheets="@../JMetroDarkTheme.css" xmlns="http://javafx.com/javafx/8.0.40" xmlns:fx="http://javafx.com/fxml/1" fx:controller="GraphePackage.FXMLDocumentController">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#1f93ff00" height="69.0" layoutX="50.0" layoutY="131.0" stroke="#1f93ff" strokeType="INSIDE" width="630.0" />
+      <Label layoutX="290.0" layoutY="-7.0" prefHeight="83.0" prefWidth="460.0" styleClass="header" text="Point d'articulation " />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#1f93ff00" height="312.0" layoutX="50.0" layoutY="209.0" stroke="#1f93ff" strokeType="INSIDE" width="630.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#1f93ff00" height="69.0" layoutX="699.0" layoutY="131.0" stroke="#1f93ff" strokeType="INSIDE" width="383.0" />
+      <TableView fx:id="graphe_tab" layoutX="125.0" layoutY="219.0" prefHeight="200.0" prefWidth="460.0">
+        <columns>
+          <TableColumn fx:id="som_col1" prefWidth="221.0" text="Sommet 1" />
+          <TableColumn fx:id="som_col2" prefWidth="224.0" text="Sommet 2" />
+        </columns>
+      </TableView>
+      <TextField fx:id="Nombr_Noed" layoutX="358.0" layoutY="139.0" onKeyPressed="#CreerTableGrapheKey" prefHeight="33.0" prefWidth="87.0" styleClass="text-feild" />
+      <TextField fx:id="Sommet_1" layoutX="150.0" layoutY="470.0" prefHeight="33.0" prefWidth="77.0" styleClass="text-feild" />
+      <Button layoutX="440.0" layoutY="469.0" mnemonicParsing="false" onAction="#AjouterAretteGraphe" styleClass="Mybutton" text="Ajouter" />
+      <Label layoutX="57.0" layoutY="472.0" styleClass="Nom" text="Sommet 1" />
+      <Label layoutX="240.0" layoutY="471.0" styleClass="Nom" text="Sommet 2" />
+      <Button layoutX="547.0" layoutY="469.0" mnemonicParsing="false" onAction="#ClickSupprimerArette" text="Supprimer" />
+      <TextField fx:id="Sommet_2" layoutX="337.0" layoutY="469.0" onKeyPressed="#AjouterAretteGrapheKey" prefHeight="33.0" prefWidth="77.0" styleClass="text-feild" />
+      <Label layoutX="66.0" layoutY="142.0" styleClass="Nom" text="Nombre de sommet du graphe" />
+      <Button layoutX="473.0" layoutY="139.0" mnemonicParsing="false" onAction="#CreerTableGraphe" styleClass="Mybutton" text="Valider" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#1f93ff00" height="312.0" layoutX="696.0" layoutY="210.0" stroke="#1f93ff" strokeType="INSIDE" width="389.0" />
+      <Label fx:id="label_introduit" layoutX="596.0" layoutY="139.0" prefHeight="33.0" prefWidth="77.0" style="-fx-font-size: 16; -fx-font-family: &quot;Segoe UI&quot;; -fx-text-fill: #00a300;" text="Introduit" visible="false" />
+      <Button layoutX="763.0" layoutY="219.0" mnemonicParsing="false" onAction="#ClickCalculerPointArticu" styleClass="Mybutton" text="Calculer" />
+      <ListView fx:id="list_point" layoutX="735.0" layoutY="296.0" prefHeight="159.0" prefWidth="155.0" style="-fx-background-color: black;" styleClass="List-view-base" />
+      <Label layoutX="707.0" layoutY="261.0" styleClass="Nom" text="Les Points d'articulations" />
+      <Button layoutX="850.0" layoutY="468.0" mnemonicParsing="false" onAction="#ClickSortir" text="QUITTER" />
+      <ImageView fitHeight="55.0" fitWidth="49.0" layoutX="227.0" layoutY="12.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../TPGONoed.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="55.0" fitWidth="49.0" layoutX="737.0" layoutY="16.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../TPGONoed.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="51.0" fitWidth="40.0" layoutX="662.0" layoutY="16.0" pickOnBounds="true">
+         <image>
+            <Image url="@../TPGONoed3.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="42.0" fitWidth="49.0" layoutX="189.0" layoutY="467.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../TPGONoed2.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="42.0" fitWidth="49.0" layoutX="726.0" layoutY="216.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../TPGONoed2.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="42.0" fitWidth="49.0" layoutX="378.0" layoutY="466.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../TPGONoed2.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="42.0" fitWidth="49.0" layoutX="809.0" layoutY="465.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../TPGONoed2.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="42.0" fitWidth="49.0" layoutX="316.0" layoutY="20.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../TPGONoed2.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="42.0" fitWidth="49.0" layoutX="409.0" layoutY="136.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../TPGONoed2.png" />
+         </image>
+      </ImageView>
+      <ListView fx:id="list_nb_cnx" layoutX="910.0" layoutY="296.0" prefHeight="159.0" prefWidth="155.0" style="-fx-background-color: black;" styleClass="List-view-base" />
+      <Label layoutX="953.0" layoutY="261.0" styleClass="Nom" text="NB CNX" />
+      <Label layoutX="707.0" layoutY="152.0" styleClass="Nom" text="NB de composantes Connexe :" />
+      <Label fx:id="label_nb_conx_init" layoutX="984.0" layoutY="153.0" prefHeight="33.0" prefWidth="77.0" style="-fx-font-size: 16; -fx-font-family: &quot;Segoe UI&quot;; -fx-text-fill: #00a300;" />
+   </children>
+</AnchorPane>
